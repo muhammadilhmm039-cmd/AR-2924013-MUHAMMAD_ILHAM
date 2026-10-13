@@ -9,6 +9,9 @@ public class PlayerMovement : MonoBehaviour
     private float horizontal;
     private float vertical;
 
+    // Menandai jika input datang dari tombol UI mobile
+    private bool isMobileInput = false;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -16,8 +19,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        horizontal = Input.GetAxis("Horizontal");
-        vertical = Input.GetAxis("Vertical");
+        // Jika tidak ada input UI mobile, gunakan keyboard (W,A,S,D / Panah)
+        if (!isMobileInput)
+        {
+            horizontal = Input.GetAxis("Horizontal");
+            vertical = Input.GetAxis("Vertical");
+        }
     }
 
     void FixedUpdate()
@@ -25,5 +32,15 @@ public class PlayerMovement : MonoBehaviour
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
         Vector3 nextPosition = rb.position + direction * moveSpeed * Time.fixedDeltaTime;
         rb.MovePosition(nextPosition);
+    }
+
+    // =======================================================
+    // FUNGSI BARU YANG DIBUAT UNTUK MENERIMA 2 ARGUMEN INPUT
+    // =======================================================
+    public void SetMobileInput(float xInput, float yInput)
+    {
+        isMobileInput = true;
+        horizontal = xInput;
+        vertical = yInput;
     }
 }

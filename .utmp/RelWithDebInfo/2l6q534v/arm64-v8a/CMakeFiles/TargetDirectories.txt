@@ -1,0 +1,5 @@
+D:/AR_2924013_MUHAMMAD_ILHAM/MUHAMAD ILHAM/.utmp/RelWithDebInfo/2l6q534v/arm64-v8a/CMakeFiles/edit_cache.dir
+D:/AR_2924013_MUHAMMAD_ILHAM/MUHAMAD ILHAM/.utmp/RelWithDebInfo/2l6q534v/arm64-v8a/CMakeFiles/rebuild_cache.dir
+D:/AR_2924013_MUHAMMAD_ILHAM/MUHAMAD ILHAM/.utmp/RelWithDebInfo/2l6q534v/arm64-v8a/GameActivity/CMakeFiles/game.dir
+D:/AR_2924013_MUHAMMAD_ILHAM/MUHAMAD ILHAM/.utmp/RelWithDebInfo/2l6q534v/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+D:/AR_2924013_MUHAMMAD_ILHAM/MUHAMAD ILHAM/.utmp/RelWithDebInfo/2l6q534v/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
